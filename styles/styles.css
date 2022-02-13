@@ -85,3 +85,61 @@
     
 }
 
+@media screen and (max-width: 1024px) {
+    .h1{
+        width: 430px;
+    }
+
+    .h{
+        font-size: 40px;
+    }
+
+    .pr{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .h1{
+        position: relative;
+        display: block;
+        text-align: center;
+        left: 20%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .pr{
+        font-size: 20px;
+    }
+
+    .main{
+        position: relative;
+        display: block;
+        left: 20%;
+        top: 20%;
+        margin: 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .h1{
+        left: 5%;
+    }
+
+    .main{
+        left: 1.5%;
+    }
+
+    .pr{
+        font-size: 18px;
+    }
+
+
+}
+

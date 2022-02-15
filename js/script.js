@@ -2,8 +2,7 @@ let login_btn = document.getElementById("login_button");
 let email = document.getElementById("login_email");
 let password = document.getElementById("login_password");
 
-const loginURL =
-  "http://localhost/facebook_mockup/backend//auth/login.php";
+const loginURL = "http://localhost/facebook_mockup_backend/auth/login.php";
 
 login_btn.addEventListener("click", () => {
   loginApi();

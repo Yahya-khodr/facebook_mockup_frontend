@@ -84,11 +84,12 @@
 }
 
 .logged_user h4 {
-  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: capitalize;
 }
 
 .logged_user img {
-  width: 30px;
+  width: 50px;
 
 }
 

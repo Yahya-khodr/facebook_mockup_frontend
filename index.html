@@ -1,209 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook Clone</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- header section -->
-    <div class="header">
-      <div class="header_left_side">
-        <img
-          src="./assets/logo.webp"
-          alt=""
-        />
-        <div class="find_freinds">
-          <span class="material-icons"> add_circle_outline </span>
-          <input type="text" placeholder="Find friends" />
-        </div>
-      </div>
 
-      <div class="header_middle">
-        <div class="nav_icon">
-          <span class="material-icons"> home </span>
-        </div>
-        <div class="nav_icon">
-          <span class="material-icons"> subscriptions </span>
-        </div>
-        <div class="nav_icon">
-          <span class="material-icons"> storefront </span>
-        </div>
-        <div class="nav_icon">
-          <span class="material-icons"> supervised_user_circle </span>
-        </div>
-        <div class="nav_icon">
-          <span class="material-icons"> dashboard </span>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Clone</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-      <div class="header_right_side">
-        <div class="logged_user">
-          <img
-            class="user_icon"
-            src="./assets/icon.png"
-            alt=""
-          />
-          <h4 class="user_name">User Name</h4>
-        </div>
-        <span class="material-icons"> menu </span>
-        <span class="material-icons"> message </span>
-        <span class="material-icons"> notifications_active </span>
-        <span class="material-icons"> expand_more </span>
-      </div>
-    </div>
-    <!-- header section ends -->
-
-    <!-- main body starts -->
-    <div class="main_body">
-      <!-- sidebar starts -->
-      <div class="sidebar">
-        <div class="sidebarRow">
-          <img class="user_icon" src="./assets/icon.png" alt=""/>
-          <h4 class="user_name">User Name</h4>
-        </div>
-
-        <div class="sidebarRow">
-          <span class="material-icons"> people </span>
-          <h4>Friends</h4>
-        </div>
-
-        <div class="sidebarRow">
-          <span class="material-icons"> groups </span>
-          <h4>Groups</h4>
-        </div>
-
-        <div class="sidebarRow">
-          <span class="material-icons"> emoji_flags </span>
-          <h4>Pages</h4>
-        </div>
-        
-        <div class="sidebarRow">
-          <span class="material-icons"> storefront </span>
-          <h4>Marketplace</h4>
-        </div>
-        
-
-        <div class="sidebarRow">
-          <span class="material-icons"> av_timer </span>
-          <h4>Memories</h4>
-        </div>
-
-        <div class="sidebarRow">
-          <span class="material-icons"> video_library </span>
-          <h4>Videos</h4>
-        </div>
-      </div>
-      <!-- sidebar section ends -->
-
-      <!-- feed section -->
-      <div class="feed">
-        <div class="stories_row">
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-
-          <!-- story starts -->
-          <div style="background-image: url(./assets/gradient.jpg);" class="story">
-            <h4>John Doe</h4>
-          </div>
-          <!-- story ends -->
-        </div>
-
-        <!-- posting field -->
-        <div class="new_post">
-          <div class="text_field">
-            <img
-              class="user_icon"
-              src="./assets/icon.png"
-              alt=""
-            />
-            <form>
-              <input id="newpost_input" placeholder="What's on your mind?" type="text" method="POST" />
-            </form>
-          </div>
-
-          <div class="posting_field">
-
-            <div class="postfield_buttons">
-              <input id="upload_image" type="button" value="Choose Photo" class="upload">
-            </div>
-
-            <div class="postfield_buttons">
-              <input id="post_button" type="button" value="Post" class="post">
-            </div>
-          </div>
-        </div>
-        <!-- posting field ends -->
-
-        <!-- posts field -->
-        <div class="post">
-          <div class="post_header">
-            <img class="user_icon post_icon"src="assets/icon.png" alt=""/>
-            <div class="post_info">
-              <h3>User Name</h3>
-              <p>25 April at 20:30</p>
-            </div>
-          </div>
-
-          <div class="post_msg">
-            <p>Message</p>
-          </div>
-
-          <div class="post__image">
-            <img
-              src="./assets/gradient.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="post_footer">
-            <div class="post_like">
-              <span class="material-icons"> thumb_up </span>
-              <p>Like</p>
-            </div>
-
-            
-          </div>
-        </div>
-        <!-- post ends -->
-
-
-      </div>
-      <!-- feed ends -->
-
-      <div style="flex: 0.33" class="friends_list">
+<body>
+  <!-- header section -->
+  <div class="header">
+    <div class="header_left_side">
+      <img src="./assets/logo.webp" alt="" />
+      <div class="find_freinds">
+        <span class="material-icons"> add_circle_outline </span>
+        <input type="text" placeholder="Find friends" />
       </div>
     </div>
 
-  </body>
+    <div class="header_middle">
+      <div class="nav_icon">
+        <span class="material-icons"> home </span>
+      </div>
+      <div class="nav_icon">
+        <span class="material-icons"> subscriptions </span>
+      </div>
+      <div class="nav_icon">
+        <span class="material-icons"> storefront </span>
+      </div>
+      <div class="nav_icon">
+        <span class="material-icons"> supervised_user_circle </span>
+      </div>
+      <div class="nav_icon">
+        <span class="material-icons"> dashboard </span>
+      </div>
+    </div>
+
+    <div class="header_right_side">
+      <div class="logged_user">
+        <img class="user_icon" src="./assets/icon.png" alt="" />
+        <h4 id="username" class="user_name">User Name</h4>
+      </div>
+      <span class="material-icons"> menu </span>
+      <span class="material-icons"> message </span>
+      <span class="material-icons"> notifications_active </span>
+      <span class="material-icons"> expand_more </span>
+    </div>
+  </div>
+  <!-- header section ends -->
+
+  <!-- main body starts -->
+  <div class="main_body">
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <div class="sidebarRow">
+        <img class="user_icon" src="./assets/icon.png" alt="" />
+        <h4 class="user_name">User Name</h4>
+      </div>
+
+      <div class="sidebarRow">
+        <span class="material-icons"> people </span>
+        <h4>Friends</h4>
+      </div>
+
+      <div class="sidebarRow">
+        <span class="material-icons"> groups </span>
+        <h4>Groups</h4>
+      </div>
+
+      <div class="sidebarRow">
+        <span class="material-icons"> emoji_flags </span>
+        <h4>Pages</h4>
+      </div>
+
+      <div class="sidebarRow">
+        <span class="material-icons"> storefront </span>
+        <h4>Marketplace</h4>
+      </div>
+
+
+      <div class="sidebarRow">
+        <span class="material-icons"> av_timer </span>
+        <h4>Memories</h4>
+      </div>
+
+      <div class="sidebarRow">
+        <span class="material-icons"> video_library </span>
+        <h4>Videos</h4>
+      </div>
+    </div>
+    <!-- sidebar section ends -->
+
+    <!-- feed section -->
+    <div class="feed">
+      <div class="stories_row">
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+
+        <!-- story starts -->
+        <div style="background-image: url(./assets/gradient.jpg);" class="story">
+          <h4>John Doe</h4>
+        </div>
+        <!-- story ends -->
+      </div>
+
+      <!-- posting field -->
+      <div class="new_post">
+        <div class="text_field">
+          <img class="user_icon" src="./assets/icon.png" alt="" />
+          <form>
+            <input id="newpost_input" placeholder="What's on your mind?" type="text" method="POST" />
+          </form>
+        </div>
+
+        <div class="posting_field">
+
+          <div class="postfield_buttons">
+            <input id="upload_image" type="button" value="Choose Photo" class="upload">
+          </div>
+
+          <div class="postfield_buttons">
+            <input id="post_button" type="button" value="Post" class="post">
+          </div>
+        </div>
+      </div>
+      <!-- posting field ends -->
+
+      <!-- posts field -->
+      <div class="post">
+        <div class="post_header">
+          <img class="user_icon post_icon" src="assets/icon.png" alt="" />
+          <div class="post_info">
+            <h3>User Name</h3>
+            <p>25 April at 20:30</p>
+          </div>
+        </div>
+
+        <div class="post_msg">
+          <p>Message</p>
+        </div>
+
+        <div class="post__image">
+          <img src="./assets/gradient.jpg" alt="" />
+        </div>
+
+        <div class="post_footer">
+          <div class="post_like">
+            <span class="material-icons"> thumb_up </span>
+            <p>Like</p>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- post ends -->
+
+
+    </div>
+    <!-- feed ends -->
+
+    <div style="flex: 0.33" class="friends_list">
+    </div>
+  </div>
+  <script src="js/user_data.js"></script>
+</body>
+
 </html>

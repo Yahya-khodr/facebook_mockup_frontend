@@ -18,37 +18,34 @@
         <h2>Sign Up</h2>
 
 
-        <form action="">
+        <form action="" method="post">
             <div class="form-item-username">
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <input type="text" name="first_name" id="first_name" placeholder="First Name">
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name">
             </div>
 
             <div class="form-item">
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="text" id="email" placeholder="Email">
             </div>
 
             <div class="form-item">
                 <input type="password" name="password" id="password" placeholder="Enter password">
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
             </div>
 
             <div>
-                <input id="image" type="file" name="file">
+                <input id="profile_image" type="file" name="file">
             </div>
 
             <div class="form-btns">
-                <button class="signup" type="submit">Sign Up</button>
+                <button id="signup_btn" class="signup" type="button">Sign Up</button>
             </div>
 
         </form>
-        
+
     </div>
 
-  
 
-    
-
+    <script src="js/register.js"></script>
 </body>
 
 </html

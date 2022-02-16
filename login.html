@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Mockup</title>
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/login_style.css">
 </head>
 
 <body>
-
-    <div class="h1">
-        <h1 class="h">facebook</h1>
-        <p class="pr">Facebook helps you connect and share with the people in your life.</p>
-    </div>
-    <form class="main" method="post">
-        <input id="login_email" type="text" placeholder="Email address" class="txt"><br>
-        <input id="login_password" type="password" placeholder="Password" class="txt"><br>
-        <input id="login_button" type="button" value="Login" class="login-btn"><br>
-        <div class="ca">
-            <a href="" class="pca">Create New Account</a>
+    <main>
+        <div class="content">
+            <div class="logo-section">
+                <img src="./assets/fb_logo.svg" alt="Logo">
+                <h2>This facebook won't steal your data and sell it</h2>
+            </div>
+            <div class="form-section">
+                <div class="form-container">
+                    <input id="login_email" type="text" placeholder="Email address">
+                    <input id="login_password" type="password" placeholder="Password">
+                    <input id="login_button" type="button" value="Login" class="login-btn btn-login"><br>
+                    <a href="/register.html" target="_parent"><button class="btn-new">Create new Account</button></a>
+                </div>
+            </div>
         </div>
-    </form>
-
+    </main>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>

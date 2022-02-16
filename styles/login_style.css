@@ -1,145 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-*{
-    margin: 0;
+* {
     padding: 0;
-    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f2f5;
-}
-.h1{
-    position: absolute;
-    left: 10%;
-    top: 30%;
-    width: 550px;
-    
-}
-.h{
-    font-size: 60px;
-    margin-bottom: 5px;
-    color: #1877f2;
-}
-.pr{
-    font-size: 30px;
-}
-.main{
-    position: absolute;
-    background-color: #ffff;
-    width: 420px;
-    height: 420px;
-    left: 55%;
-    top: 20%;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px rgb(184, 184, 184),
-                -1px -1px 5px rgb(184, 184, 184);
-}
-.txt{
-    margin: 10px;
-    margin-top: 20px;
-    padding: 20px;
-    width: 85%;
-    background-color: #ffff;
-    outline: none;
-    border: 1px solid rgb(184, 184, 184);
-    border-radius: 5px;
-    font-size: 15px; 
-      
-}
-.txt:focus{
-    border: 1px solid #1877f2;
-    box-shadow: 1px 1px 1px #1877f2,
-                -1px -1px 1px #1877f2;
-}
-.login-btn{
-   
-    margin: 10px ;
-    padding: 15px;
-    width: 95%;
-    border-radius: 5px;
-    background-color: #1877f2;
-    color: #ffff;
-    font-size: 20px;
-    border: none;
-    font-weight: bolder;
-    border-bottom: 1px solid rgb(184, 184, 184) ;
-
+    color: #1c1e21;
 }
 
-.ca{
+main {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-section{
+    flex: 0 0 50%;
+    text-align: left;
+}
+
+.form-section {
+    flex: 0 0 40%;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 95px;
-    width: 50%;
-    
-    margin-bottom: 20px;
-    padding: 15px;
+}
+
+.logo-section img {
+    max-width: 300px;
+}
+
+.logo-section h2 {
+    font: 26px;
+    font-weight: 400;
+    padding: 0 30px;
+    line-height: 32px;
+}
+
+.form-section .form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.form-section .form-container input, .form-section .form-container .btn-login {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.form-section .form-container input {
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+}
+
+.form-section .form-container input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.form-section .form-container .btn-login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.form-section .form-container .btn-new {
     background-color: #42b72a;
-    border-radius: 5px;
-}
-.pca{
-    text-decoration: none;
-    background: none;
-    color: #ffff;
-    font-weight: bolder;
+    border: none;
+    border-radius: 6px;
     font-size: 17px;
-    
+    line-height: 48px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-    .h1{
-        width: 430px;
-    }
+.form-section .form-container .file {
 
-    .h{
-        font-size: 40px;
-    }
-
-    .pr{
-        font-size: 35px;
-    }
+    margin-top: 25px;
+    margin-left: 20px;
+    border: none;
 
 }
 
-@media screen and (max-width: 768px) {
-
-    .h1{
-        position: relative;
-        display: block;
-        text-align: center;
-        left: 20%;
-        margin-top: 10%;
-        margin-bottom: 5%;
-    }
-
-    .pr{
-        font-size: 20px;
-    }
-
-    .main{
-        position: relative;
-        display: block;
-        left: 20%;
-        top: 20%;
-        margin: 10px;
-        text-align: center;
-    }
-
+.form-section .form-container .uploadpic {
+    background-color: #1877f2;
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
 }
+
+.form-section .form-container .btn-login:hover {
+    background-color: rgb(10, 76, 161);
+    cursor: pointer;
+}
+
+.form-section .form-container .btn-new:hover {
+    background-color: #307a21;
+    cursor: pointer;
+}
+
+
+.form-section .form-container a{
+    margin: 20px;
+}
+
 
 @media screen and (max-width: 425px) {
 
-    .h1{
-        left: 5%;
+    .content {
+        flex-direction: column;
     }
 
-    .main{
-        left: 1.5%;
+    .logo-section {
+        flex: 0 0 50%;
+        text-align: center;
+        margin-top: 200px;
     }
 
-    .pr{
-        font-size: 18px;
+    .form-section .form-container {
+        margin-top: 20px;
+        max-width: 340px;
     }
-
-
 }
 
+@media screen and (max-width: 320px) {
+
+    .form-section .form-container {
+        margin-top: 20px;
+        max-width: 300px;
+    }
+
+}

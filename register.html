@@ -5,47 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page </title>
-    <link href="./styles/register_style.css" rel="stylesheet">
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/register_style.css">
 </head>
 
 <body>
-
-    <div class="greeting">
-        <h1 class="h">facebook</h1>
-    </div>
-    <div class="container">
-        <h2>Sign Up</h2>
-
-
-        <form action="" method="post">
-            <div class="form-item-username">
-                <input type="text" name="first_name" id="first_name" placeholder="First Name">
-                <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+    <main>
+        <div class="content">
+            <div class="logo-section">
+                <img src="./assets/fb_logo.svg" alt="Logo">
+                <h2>This facebook won't steal your data and sell it</h2>
             </div>
-
-            <div class="form-item">
-                <input type="email" name="text" id="email" placeholder="Email">
+            <div class="form-section">
+                <div class="form-container">
+                    <h2>Sign up</h2>
+                    <input id="first_name" type="text" placeholder="First Name">
+                    <input id="last_name" type="text" placeholder="Last Name">
+                    <input id="login_email" type="text" placeholder="Email address">
+                    <input id="login_password" type="password" placeholder="Password">
+                    <input type="file" class="file" id="myFile" name="filename">
+                    <input type="submit" class = "uploadpic" value="Upload"/><br>
+                    <button class="btn-new">Sign up</button>
+                    <div class="login"><a href="/login.html">Already have an account? Sign In!</a></div>
+                </div>
             </div>
-
-            <div class="form-item">
-                <input type="password" name="password" id="password" placeholder="Enter password">
-            </div>
-
-            <div>
-                <input id="profile_image" type="file" name="file">
-            </div>
-
-            <div class="form-btns">
-                <button id="signup_btn" class="signup" type="button">Sign Up</button>
-            </div>
-
-        </form>
-
-    </div>
-
-
-    <script src="js/register.js"></script>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 
-</html
+</html>

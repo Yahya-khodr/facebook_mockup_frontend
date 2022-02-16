@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/all_users_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header">
+        <div style="flex: 0.33" class="header_left_side">
+            <img src="./assets/logo.webp" alt="" />
+            <div class="find_freinds">
+                <span class="material-icons"> add_circle_outline </span>
+                <input type="text" placeholder="Find friends" />
+            </div>
+        </div>
+
+        <div class="header_middle">
+            <div class="nav_icon">
+                <span class="material-icons"> home </span>
+            </div>
+            <div class="nav_icon">
+                <span class="material-icons"> subscriptions </span>
+            </div>
+            <div class="nav_icon">
+                <span class="material-icons"> storefront </span>
+            </div>
+            <div class="nav_icon">
+                <span class="material-icons"> supervised_user_circle </span>
+            </div>
+            <div class="nav_icon">
+                <span class="material-icons"> dashboard </span>
+            </div>
+        </div>
+
+        <div style="flex: 0.33" class="header_right_side">
+            <div class="logged_user">
+                <h4 id="username" class="user_name">User Name</h4>
+                <img class="user_icon" src="./assets/icon.png" alt="" />
+            </div>
+            <span class="material-icons"> expand_more </span>
+        </div>
+    </div>
+    </div>
+    <!-- header section ends -->
+    <div class="heading">All Users</div>
+    <div class="main_body">
+        <div id="users_list" class="users_list">
+
+            <!-- <div id="user" class="user">
+                <div id="users_info" class="user_info">
+                    <img src="./assets/icon.png" class="user_info-img" />
+                    <h3>User Name</h3>
+                </div>
+                <div class="decision">
+                    <a href><span class="material-icons add"> person_add </span></a>
+                    <a href><span class="material-icons blocked"> block </span></a>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+    </div>
+
+    <script src="js/get_all_users.js"></script>
+</body>
+
+</html>

@@ -5,6 +5,7 @@
 
 .header_left_side img {
   height: 40px;
+  margin-right: 20px;
 }
 
 .user_icon {
@@ -84,7 +85,7 @@
 }
 
 .logged_user h4 {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .logged_user img {
@@ -95,11 +96,8 @@
 .header_right_side {
   display: flex;
   align-items: center;
-}
-
-.header_right_side .material-icons {
-  color: gray;
-  margin: 0 10px;
+  
+  
 }
 
 .header_right_side .material-icons:hover {
@@ -125,41 +123,6 @@
   font-weight: 600;
 }
 
-.sidebarRow .material-icons {
-  font-size: xx-large;
-  color: #2e81f4;
-}
-
-/* story */
-.story {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 120px;
-  height: 200px;
-  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  margin-right: 10px;
-  transition: transform 100ms ease-in;
-  cursor: pointer;
-}
-
-.story:hover {
-  transform: scale(1.07);
-}
-
-
-.story h4 {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-}
-
-.stories_row {
-  padding: 10px 0;
-  display: flex;
-}
 
 .main_body {
   display: flex;
@@ -187,7 +150,7 @@ body {
 
 .new_post {
   display: flex;
-  margin-top: 30px;
+  margin-top: 5px;
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
@@ -254,6 +217,7 @@ body {
 
 .post__image img {
   width: 100%;
+  max-height: 400px;
 }
 
 .post_header {
@@ -311,23 +275,23 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav_icon .material-icons {
+    font-size: x-large;
+    color: gray;
+  }
+
   .sidebar {
     display: none;
   }
 
-  .find_freinds input {
-    display: none;
-  }
-
-  .header_middle {
-    display: none;
-  }
-
-  .logged_user {
-    display: none;
-  }
-
-  .widgets {
+  .friends_list {
     display: none;
   }
 
@@ -337,19 +301,16 @@ body {
     padding: 0;
   }
 
-  .story h4 {
-    font-size: 10px;
-  }
-
-  .story img {
-    width: 40px;
-  }
 }
 
 @media (min-width: 320px) {
-  .stories_row {
+  .header {
     width: 100%;
-    overflow-x: scroll;
+  }
+
+  .feed {
+    width: 100%;
+    padding: 10px 50px;
   }
 }
 
@@ -357,7 +318,7 @@ body {
   /* CSS To Target 767 px width of screen */
 
   .feed {
-    width: 50%;
+    width: 100%;
     padding: 10px 50px;
   }
 }

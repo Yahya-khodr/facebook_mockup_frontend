@@ -25,9 +25,9 @@ async function signup() {
   if (result.status) {
     location.replace("login.html");
   } else {
-    alert(result.message);
+    profile_image.value = "";
+    upload_image.innerHTML = `<img src="./assets/ ${result.profile_path}" />`;
   }
-  // upload_image.innerHTML = `<img src="./assets/ ${result.profile_path}" />`;
 }
 signup_btn.addEventListener("click", () => {
   signup();

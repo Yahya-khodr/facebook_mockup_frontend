@@ -11,9 +11,11 @@ async function getUserById() {
   let response = await fetch(userAPI + user_id);
   let result = await response.json();
   username.textContent = `${result.first_name} ${result.last_name}`;
-  for (var i=0; i <user_icon.length;i++){
-
-    user_icon[i].innerHTML = '<img class="profile_image" src="./assets/cached/'+result.profile_image+'"  />';
+  for (var i = 0; i < user_icon.length; i++) {
+    user_icon[i].innerHTML =
+      '<img class="profile_image" src="./assets/cached/' +
+      result.profile_image +
+      '"  />';
   }
   // user_icon.style.backgroundImage = `url(./assets/cached/${result.profile_image})`;
 }

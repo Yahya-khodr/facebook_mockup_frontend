@@ -13,9 +13,12 @@ async function loginApi() {
     }),
   });
   let result = await response.json();
+
+  if (result.status) {
+    localStorage.setItem("user_id", result.id);
+    location.replace("index.html");
+  }
   console.log(result);
-  localStorage.setItem("user_id", result.id);
-  location.replace("index.html");
 }
 
 login_btn.addEventListener("click", () => {

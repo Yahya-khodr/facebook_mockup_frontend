@@ -17,6 +17,8 @@ async function getUserById() {
       result.profile_image +
       '"  />';
   }
+  localStorage.setItem("first_name", result.first_name);
+  localStorage.setItem("last_name", result.last_name);
   // user_icon.style.backgroundImage = `url(./assets/cached/${result.profile_image})`;
 }
 

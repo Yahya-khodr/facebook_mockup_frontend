@@ -1,178 +1,175 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
-    color: #1c1e21;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
 }
 
 main {
-    height: 70vh;
-    width: 100vw;
-    position: relative;
-    margin: 0 auto;
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  margin: 0 auto;
 }
 
 .content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.logo-section{
-    flex: 0 0 50%;
-    text-align: left;
+.logo-section {
+  flex: 0 0 50%;
+  text-align: left;
 }
 
 .form-section {
-    flex: 0 0 40%;
-    text-align: center;
-    margin-top: 60px;
+  flex: 0 0 40%;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .logo-section img {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .logo-section h2 {
-    font: 26px;
-    font-weight: 400;
-    padding: 0 30px;
-    line-height: 32px;
+  font: 26px;
+  font-weight: 400;
+  padding: 0 30px;
+  line-height: 32px;
 }
 
 .form-section .form-container {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
 }
 
-.form-section .form-container input, .form-section .form-container .btn-login {
-    width: 100%;
-    margin: 5px 0;
-    height: 45px;
-    vertical-align: middle;
-    font-size: 16px;
+.form-section .form-container input,
+.form-section .form-container .btn-login {
+  width: 100%;
+  margin: 5px 0;
+  height: 45px;
+  vertical-align: middle;
+  font-size: 16px;
 }
 
 .form-section .form-container input {
-    border: 1px solid #dddfe2;
-    color: #1d2129;
-    padding: 0 8px;
-    outline: none;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  padding: 0 8px;
+  outline: none;
 }
 
 .form-section .form-container input:focus {
-    border-color: #1877f2;
-    box-shadow: 0 0 0 2px #e7f3ff;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
 }
 
 .form-section .form-container .btn-login {
-    background-color: #1877f2;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    padding: 0 16px;
-    color: #ffffff;
-    font-weight: 700;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .form-section .form-container .btn-new {
-    background-color: #42b72a;
-    border: none;
-    border-radius: 6px;
-    font-size: 17px;
-    line-height: 48px;
-    padding: 0 16px;
-    color: #ffffff;
-    font-weight: 700;
-    margin-top: 10px;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .form-section .form-container .file {
-
-    margin-top: 25px;
-    margin-left: 20px;
-    border: none;
-
+  margin-top: 25px;
+  margin-left: 20px;
+  border: none;
+}
+.form-section .form-container .uploaded_image img {
+  border-radius: 50%;
+  width: 80px;
+  background-size: cover;
 }
 
 .form-section .form-container .uploadpic {
-    background-color: #1877f2;
-    width: 200px;
-    border: none;
-    border-radius: 6px;
-    font-size: 17px;
-    line-height: 48px;
-    padding: 0 16px;
-    color: #ffffff;
-    font-weight: 700;
+  background-color: #1877f2;
+  width: 200px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .form-section .form-container .btn-login:hover {
-    background-color: rgb(10, 76, 161);
-    cursor: pointer;
+  background-color: rgb(10, 76, 161);
+  cursor: pointer;
 }
 
 .form-section .form-container .btn-new:hover {
-    background-color: #307a21;
-    cursor: pointer;
+  background-color: #307a21;
+  cursor: pointer;
 }
 
-
-.form-section .form-container a{
-    margin-top: 30px;
-    font-size: 12px;
+.form-section .form-container a {
+  margin-top: 30px;
+  font-size: 12px;
 }
-
-
 
 @media screen and (max-width: 425px) {
+  .content {
+    flex-direction: column;
+  }
 
-    .content {
-        flex-direction: column;
-    }
+  .logo-section {
+    flex: 0 0 50%;
+    text-align: center;
+    margin-top: 200px;
+  }
 
-    .logo-section {
-        flex: 0 0 50%;
-        text-align: center;
-        margin-top: 200px;
-    }
+  .logo-section h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
 
-    .logo-section h2 {
-        font-size: 20px;
-        font-weight: 400;
-    }
+  .form-section {
+    margin-top: 0px;
+  }
 
-    .form-section{
-        margin-top: 0px;
-    }
-    
-    
-    .form-section .form-container {
-        margin-top: 20px;
-        max-width: 340px;
-    }
+  .form-section .form-container {
+    margin-top: 20px;
+    max-width: 340px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-
-    .form-section .form-container {
-        margin-top: 20px;
-        max-width: 300px;
-    }
-
+  .form-section .form-container {
+    margin-top: 20px;
+    max-width: 300px;
+  }
 }

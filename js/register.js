@@ -4,27 +4,25 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let profile_image = document.getElementById("profile_image");
 let signup_btn = document.getElementById("signup_btn");
+let upload_image = document.getElementById("uploaded_image");
 
 const api = "http://localhost/facebook_mockup/backend/auth/signup.php";
 
-async function createAccount() {
-  let res = await fetch(api, {
-    method: "POST",
-    body: new URLSearchParams({
-      first_name: first_name,
-      last_name: last_name,
-      email: email,
-      password: password,
-      profile_image: profile_image,
-    }),
-  });
-  let data = await res.json();
-  if (data.status) {
-    location.replace("login.html");
-  }
-  console.log(data.status);
-}
+async function signup() {
+  const form_data = new FormData();
+  form_data.append("first_name", first_name.value);
+  form_data.append("last_name", last_name.value);
+  form_data.append("email", email.value);
+  form_data.append("password", password.value);
+  form_data.append("profile_image", profile_image.files[0]);
 
+  let response = await fetch(api, {
+    method: "POST",
+    body: form_data,
+  });
+  let result = await response.json();
+  console.log(result);
+}
 signup_btn.addEventListener("click", () => {
-  createAccount();
+  signup();
 });

@@ -15,7 +15,8 @@ async function loginApi() {
   let result = await response.json();
   console.log(result);
   localStorage.setItem("user_id", result.id);
-  location.replace("index.html");
+  // location.replace("index.html");
+  
 }
 
 login_btn.addEventListener("click", () => {

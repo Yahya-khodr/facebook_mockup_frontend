@@ -13,6 +13,7 @@
   height: 50px;
 }
 .user_icon {
+  margin: 0 10px;
   border-radius: 50%;
   width: 45px;
 }
@@ -28,7 +29,7 @@
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 
-.header_left_side{
+.header_left_side {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -50,7 +51,7 @@
   outline-width: 0;
 }
 
-.header_middle{
+.header_middle {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -72,7 +73,6 @@
   cursor: pointer;
 }
 
-
 .nav_icon:hover {
   background-color: #eff2f5;
   border-bottom: 4px solid #2e81f4;
@@ -80,7 +80,6 @@
   border-radius: 10px;
   align-items: center;
   padding: 0 30px;
-
 }
 
 .logged_user {
@@ -92,12 +91,9 @@
   margin-right: 10px;
 }
 
-
 .header_right_side {
   display: flex;
   align-items: center;
-  
-  
 }
 
 .header_right_side .material-icons:hover {
@@ -122,7 +118,6 @@
   margin-left: 20px;
   font-weight: 600;
 }
-
 
 .main_body {
   display: flex;
@@ -182,7 +177,7 @@ body {
 
 .posting_field {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin-right: 20px;
 }
 
@@ -260,7 +255,7 @@ body {
 .post_like {
   display: flex;
   align-items: center;
-  justify-content:left;
+  justify-content: left;
   padding: 5px;
   flex: 1;
 }
@@ -275,7 +270,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .header {
     display: flex;
     flex-direction: column;
@@ -300,7 +294,6 @@ body {
     width: 100%;
     padding: 0;
   }
-
 }
 
 @media (min-width: 320px) {

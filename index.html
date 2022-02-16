@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div style="flex: 0.33"class="header_right_side">
+    <div style="flex: 0.33" class="header_right_side">
       <div class="logged_user">
         <h4 id="username" class="user_name">User Name</h4>
         <div class="user_icon">
@@ -60,7 +60,7 @@
     <!-- sidebar section ends -->
 
     <!-- feed section -->
-    <div class="feed">
+    <div id="feed" class="feed">
       <!-- posting field -->
       <div class="new_post">
         <div class="text_field">
@@ -79,7 +79,7 @@
             <input id="upload_image" type="button" value="Choose Photo" class="upload">
           </div>
 
-          <div class="postfield_buttons">
+          <div id="postfield_buttons" class="postfield_buttons">
             <input id="post_button" type="button" value="Post" class="post">
           </div>
         </div>
@@ -91,21 +91,21 @@
         <div class="post_header">
           <div class="user_icon">
 
-            <!-- <img class="user_icon post_icon" src="assets/icon.png" alt="" /> -->
+            <img class="user_icon post_icon" src="assets/icon.png" alt="" />
           </div>
-          <div  class="post_info">
+          <div class="post_info">
             <h3 id="post_user">User Name</h3>
             <p>25 April at 20:30</p>
           </div>
         </div>
 
-        <div  class="post_msg">
+        <div class="post_msg">
           <p id="post_content">Message</p>
         </div>
 
-        <div class="post__image">
+        <!-- <div class="post__image">
           <img src="./assets/gradient.jpg" alt="" />
-        </div>
+        </div> -->
 
         <div class="post_footer">
           <div class="post_like">
@@ -125,8 +125,9 @@
     <div style="flex: 0.33" class="friends_list">
     </div>
   </div>
-  <script src="js/user_data.js"></script>
   <script src="js/post_status.js"></script>
+  <script src="js/user_data.js"></script>
+  <script src="js/get_posts.js"></script>
 </body>
 
 </html>

@@ -37,4 +37,4 @@ async function fetchPost() {
   }
 }
 
-
+// fetchPost();

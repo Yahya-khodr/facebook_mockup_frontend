@@ -6,49 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/friends_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <title>Document</title>
 </head>
 
 <body>
     <!-- header section -->
-    <div class="header">
-        <div style="flex: 0.33" class="header_left_side">
-            <img src="./assets/logo.webp" alt="" />
-            <div class="find_freinds">
-                <span class="material-icons"> add_circle_outline </span>
-                <input type="text" placeholder="Find friends" />
-            </div>
-        </div>
-
-        <div class="header_middle">
-            <div class="nav_icon">
-                <span class="material-icons"> home </span>
-            </div>
-            <div class="nav_icon">
-                <span class="material-icons"> subscriptions </span>
-            </div>
-            <div class="nav_icon">
-                <span class="material-icons"> storefront </span>
-            </div>
-            <div class="nav_icon">
-                <span class="material-icons"> supervised_user_circle </span>
-            </div>
-            <div class="nav_icon">
-                <span class="material-icons"> dashboard </span>
-            </div>
-        </div>
-
-        <div style="flex: 0.33" class="header_right_side">
-            <div class="logged_user">
-                <h4 id="username" class="user_name">User Name</h4>
-                <img class="user_icon" src="./assets/icon.png" alt="" />
-            </div>
-            <span class="material-icons"> expand_more </span>
-        </div>
+  <div class="header">
+    <div style="flex: 0.33" class="header_left_side">
+      <img src="./assets/logo.webp" alt="" />
+      <div class="find_freinds">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Find friends" />
+      </div>
     </div>
+
+    <div class="header_middle">
+      <div class="nav_icon">
+        <a href="/index.html" target="_parent"><span class="material-icons"> home </span></a>
+      </div>
+      <div class="nav_icon">
+        <a href="/friends.html" target="_parent"><span class="material-icons"> emoji_people </span></a>
+        </div>
+      <div class="nav_icon">
+        <a href="/friends_request.html" target="_parent"><span class="material-icons"> person_add </span></a>
+      </div>
+      <div class="nav_icon">
+        <a href="/blocked.html" target="_parent"><span class="material-icons"> person_remove </span></a>
+      </div>
+      <div class="nav_icon">
+        <a href="/all_users.html" target="_parent"><span class="material-icons"> group </span></a>
+      </div>
     </div>
-    <!-- header section ends -->
+
+    <div style="flex: 0.33"class="header_right_side">
+      <div class="logged_user">
+        <h4 id="username" class="user_name">User Name</h4>
+        <div class="user_icon">
+
+          <!-- <img class="user_icon" src="./assets/icon.png" alt="" /> -->
+        </div>
+      </div>
+      <span class="material-icons"> expand_more </span>
+    </div>
+  </div>
+  <!-- header section ends -->
     <div class="heading">Friends</div>
     <div class="main_body">
         <div id="friends_list" class="friends_list">

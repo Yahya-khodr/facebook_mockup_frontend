@@ -1,7 +1,10 @@
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  min-width:max-content;
+
 }
 
 .header_left_side img {
@@ -96,14 +99,17 @@
 
 .header_right_side {
   display: flex;
-  align-items: center;
-  
-  
+  justify-content: flex-end;
 }
 
 .header_right_side .material-icons:hover {
   cursor: pointer;
 }
+
+.header_right_side .material-icons {
+  margin-top: 10px;
+}
+
 
 /* sidebar  */
 
@@ -163,7 +169,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eff2f5;
-  padding: 15px;
+  padding: 10px;
+  height: 80px;
 }
 
 .text_field form {
@@ -185,25 +192,35 @@ body {
   display: flex;
   justify-content:flex-end;
   margin-right: 20px;
+  height: 60px;
 }
 
 .postfield_buttons {
-  padding: 8px;
+  padding-bottom: 10px;
   display: flex;
   align-items: flex-end;
-  color: gray;
+  color: #1877f2;
   margin: 5px;
+  width: 100px;
+}
+
+#post_button{
+  background-color: #1877f2;
+  color: white;
+  font-weight: bold;
+  border: white 1px;
+  height: 30px;
+}
+
+#post_button:hover{
+  background-color: #42b72a;;
+  color: white;
+  height: 35px;
 }
 
 .postfield_buttons h3 {
   font-size: medium;
   margin-left: 10px;
-}
-
-.postfield_buttons:hover {
-  cursor: pointer;
-  background-color: #eff2f5;
-  border-radius: 20px;
 }
 
 /* post */
@@ -270,8 +287,8 @@ body {
   margin-left: 10px;
 }
 
-.post_like :hover {
-  background-color: #eff2f5;
+.post_like .material-icons:hover {
+  color: #2e81f4;
   border-radius: 10px;
 }
 
@@ -281,6 +298,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .header_middle{
+    margin: 20px 0 20px 0;
+  }
+
+  .header_right_side {  
+    justify-content: center;
   }
 
   .nav_icon .material-icons {
@@ -312,6 +337,11 @@ body {
   .feed {
     width: 100%;
     padding: 10px 50px;
+  }
+
+  .header_right_side {
+    display: flex;
+    justify-content: center;
   }
 }
 

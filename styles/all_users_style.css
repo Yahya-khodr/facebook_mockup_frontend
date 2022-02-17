@@ -1,7 +1,10 @@
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  min-width:max-content;
+
 }
 
 .header_left_side img {
@@ -193,15 +196,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #f1f2f5;
-    min-width: 860px;
-  }
-}
 
-@media screen and (max-width: 425px) {
-  body {
-    background-color: #f1f2f5;
-    min-width: 865px;
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_middle{
+    margin: 20px 0 20px 0;
+  }
+
+  .header_right_side {  
+    justify-content: center;
   }
 }

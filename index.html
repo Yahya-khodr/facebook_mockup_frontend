@@ -48,8 +48,26 @@
           <!-- <img class="user_icon" src="./assets/icon.png" alt="" /> -->
         </div>
       </div>
-      <span class="material-icons"> expand_more </span>
+      <div class="div" onclick="settingsMenuTggle()" >
+
+        <span class="material-icons"> expand_more </span>
+      </div>
     </div>
+
+    <!-- Setting Menu -->
+		<div class="setting-munu">
+			<div id="dark-btn">
+				<span></span>
+			</div>
+			<div class="setting-menu-inner">
+				<div id="user_profile" class="user-profile">
+						<!-- <div>
+							<p>User Name</p>
+							<a href="#">See your profile</a>
+						</div> -->
+				</div>
+			</div>
+		</div>
   </div>
   <!-- header section ends -->
 
@@ -126,6 +144,7 @@
     <div style="flex: 0.33" class="friends_list">
     </div>
   </div>
+  <script src="js/toggle.js"></script>
   <script src="js/post_status.js"></script>
   <script src="js/user_data.js"></script>
   <script src="js/get_posts.js"></script>
